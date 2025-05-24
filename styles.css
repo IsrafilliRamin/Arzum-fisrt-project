@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgreen;
+    align-items: center;
+    padding: 0px 30px;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    font-family: sans-serif;
+    width: 500px;
+}
+
+header nav .fa-face-smile {
+    padding: 13px;
+}
+
+header nav ul li {
+    cursor: pointer;
+}
+
+header nav ul li:hover {
+    color: aquamarine;
+}
+
+main {
+}
+
+main section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+main section .container .box {
+    height: 200px;
+    width: 250px;
+    border: 3px solid red;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px gray;
+    background-image: url(485840.jpg);
+    background-size: 400px;
+    background-repeat: no-repeat;
+}
+
+/* Responsive start */
+
+
+@media (max-width: 1045px) {
+    main section .container .box {
+    height: 200px;
+    width: 42vw; /* elastiki */
+    border: 3px solid red;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px gray;
+    background-image: url(485840.jpg);
+    background-size: 451px;
+    background-repeat: no-repeat;
+}
+}
+
+@media (max-width: 603px) {
+    header nav {
+        justify-content: center;
+        padding: 0px 15px;
+    }
+    header nav ul {
+        width: 100%;
+    }
+      main section .container .box {
+    height: 200px;
+    width:100% ;/* elastiki */
+    border: 3px solid red;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px gray;
+    background-image: url(485840.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+}
+
+@media (max-width: 370px) {
+     main section .container .box {
+  
+    background-size: 600px;
+    
+}
+}
+
+/* main section .sectwo{
+    background-image: url(485840.jpg);
+    height: 500px;
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main section .secone {
+     background-color: black;
+    height: 400px;
+}
+main section .secthree {
+    background-color: black;
+    height: 400px;
+} */
